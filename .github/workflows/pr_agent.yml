@@ -34,3 +34,6 @@ jobs:
           AZURE_API_TYPE: 'azure'
           AZURE_API_KEY: ${{ secrets.OPENAI_KEY }}
           AZURE_API_BASE: "https://codiumai-code-review-gitlab-ci.openai.azure.com"
+          github_action_config.auto_review: "true"
+          github_action_config.auto_describe: "true"
+          github_action_config.auto_improve: "true"
