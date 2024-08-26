@@ -27,9 +27,9 @@ jobs:
           OPENAI_API_VERSION: "2024-06-01"
           OPENAI_API_BASE: "https://codiumai-code-review-gitlab-ci.openai.azure.com"
           OPENAI.DEPLOYMENT_ID: "gpt-4o"
-          CONFIG.MODEL: "gpt-4o"
+          CONFIG.MODEL: "gpt-4o-0513"
           CONFIG.MAX_MODEL_TOKEN: 64000
-          CONFIG_MODEL: "gpt-4o"
+          CONFIG_MODEL: "gpt-4o-0513"
           CONFIG_MAX_MODEL_TOKEN: 64000
           AZURE_API_TYPE: 'azure'
           AZURE_API_KEY: ${{ secrets.OPENAI_KEY }}
