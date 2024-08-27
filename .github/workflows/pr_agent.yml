@@ -17,23 +17,18 @@ jobs:
         uses: docker://codiumai/pr-agent:0.23-github_action
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          OPENAI.KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_DEPLOYMENT_ID: 'gpt-4o'
-          OPENAI.API_TYPE: 'azure'
-          OPENAI.API_VERSION: '2024-06-01'
-          OPENAI.API_BASE: 'https://codiumai-code-review-gitlab-ci.openai.azure.com'
-          AZURE_API_VERSION: '2024-06-01'
-          OPENAI_API_TYPE: 'azure'
-          OPENAI_API_VERSION: '2024-06-01'
-          OPENAI_API_BASE: 'https://codiumai-code-review-gitlab-ci.openai.azure.com'
           OPENAI.DEPLOYMENT_ID: 'gpt-4o'
+          OPENAI.API_TYPE: 'azure'
+          OPENAI_API_TYPE: 'azure'
+          OPENAI.API_VERSION: '2024-06-01'
+          OPENAI_API_VERSION: '2024-06-01'
+          OPENAI.API_BASE: 'https://codiumai-code-review-gitlab-ci.openai.azure.com'
+          OPENAI_API_BASE: 'https://codiumai-code-review-gitlab-ci.openai.azure.com'
           CONFIG.MODEL: 'gpt-4o'
-          CONFIG.MAX_MODEL_TOKEN: 64000
           CONFIG_MODEL: 'gpt-4o'
-          CONFIG_MAX_MODEL_TOKEN: 64000
-          AZURE_API_TYPE: 'azure'
-          AZURE_API_KEY: ${{ secrets.OPENAI_KEY }}
-          AZURE_API_BASE: 'https://codiumai-code-review-gitlab-ci.openai.azure.com'
           github_action_config.auto_review: 'true'
           github_action_config.auto_describe: 'true'
           github_action_config.auto_improve: 'true'
